@@ -1,0 +1,74 @@
+.navigation {
+  width: 400px;
+  margin-left: 75px;
+  position: absolute;
+}
+
+.logo {
+  z-index: 10;
+  background: #99FFCC;
+  height: 75px;
+  width: 100%;
+}
+
+.logo h1 {
+  height: 75px;
+  width: 100%;
+  text-transform: uppercase;
+  padding-top: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+  position: absolute;
+
+}
+
+nav {
+  width: 100%;
+  margin-top: -300px;
+  z-index: -1;
+  position: absolute;
+  
+}
+
+nav ul li {
+  height: 75px;
+  width: 100%;
+  background: #66FF99;
+  border-bottom: 1px solid white;
+  padding-left: 60px;
+  padding-top: 25px;
+  text-transform: uppercase;
+  color: white;
+}
+
+nav ul li:hover {
+  background: #66CC99;
+}
+
+.trigger {
+  height: 50px;
+}
+
+
+li.trigger {
+  padding-top: 15px;
+  background: black;
+  border-bottom: none;
+
+}
+
+li.trigger p {
+  float: left;
+}
+
+li.trigger img {
+
+  float: left;
+  padding-left: 200px;
+  margin-top: -7px;
+
+}
+
+
