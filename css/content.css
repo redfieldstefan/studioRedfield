@@ -1,0 +1,93 @@
+.content {
+	width: 100%;
+	float: left;
+}
+
+.head {
+	padding-top: 25px;
+	float: left;
+}
+
+.head .featured {
+	width: 55%;
+	float: left;
+	margin-left: 4%;
+	overflow: hidden;
+
+}
+
+.head .text {
+	width: 35%;
+	float: left;
+	padding-left: 50px;
+}
+
+.head p {
+	padding-top: 25px;
+	width: 70%;
+}
+
+.medium-options {
+ padding-top: 50px;
+ float: left;
+ width: 100%;
+}
+
+.medium-options ul {
+	padding-top: 25px;
+
+}
+
+.medium-options li {
+  width: 32.5%;
+  height: 75px;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  padding-top: 33px;
+  text-align: center;
+  background: #66FF99;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+
+}
+
+.medium-options li:hover {
+  background: tomato;
+}
+
+.medium-options li a {
+  
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.medium-options em li {
+  background: #0097B2;
+  text-transform: none;
+}
+
+.medium-options em li:hover {
+  background: #CC0000;
+}
+
+.row {
+  float: left;
+  margin-left: 4%;
+  margin-top: 50px; 
+}
+
+.row .text {
+
+
+
+}
+
+@media (min-width: 800px){
+	
+}

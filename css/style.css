@@ -1,4 +1,6 @@
+
 @import 'nav.css';
+@import 'content.css';
 
 @-ms-viewport {
   width: device-width;
@@ -35,6 +37,15 @@ a {
   text-decoration: none;
 }
 
+h1{
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
  .container {
   width: 100%;
   margin: 0 auto;
@@ -42,32 +53,104 @@ a {
 
  }
 
-.content{
-  position: absolute;
-  z-index: -2;
+.index-menu {
+  padding-top: 25px;
+  margin-left: 4%;
+  width: 90%;
+  float: left;
+
+}
+
+.logo {
   width: 100%;
 
 }
 
-.featured {
+.index-options {
+  padding-left: 1%;
+
+}
+
+.index-options li {
+  width: 32.3%;
+  height: 75px;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  padding-top: 33px;
+  text-align: center;
+  background: #66FF99;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.index-options li:hover {
+  background: tomato;
+}
+
+.index-options li a {
+  
+  height: 100%;
   width: 100%;
+
+
 }
 
-.featured p {
-  margin-top: 150px;
-  padding-left: 75px;
-  width: 30%;
+#featured {
+  width: 50%;
+  display: none;
+  /*padding-bottom: 41%;*/
+  margin-top: 25px;
+  margin-left: 25px;
   float: left;
 }
 
-.feature {
-  background: url('../img/rrbowl-1.jpg') no-repeat center center;
-  background-size: cover;
-  margin-left: 10%;
+@media (min-width: 575px) {
+
+  .index-menu {
+  padding-top: 25px;
+  margin-left: 6%;
+  width: 35%;
   float: left;
-  width: 60%;
-  padding-bottom: 40%
- 
+
 }
 
+.index-options li {
+  font-size: 10px;
+  height: 50px;
+  padding-top: 17px;
+}
 
+  #featured {
+    margin-top: 75px;
+    display: inline;
+  }
+
+}
+
+@media (min-width: 830px) {
+
+  .index-menu {
+  padding-top: 25px;
+  margin-left: 6%;
+  width: 35%;
+  float: left;
+
+}
+
+.index-options li {
+  font-size: 15px;
+  height: 50px;
+  padding-top: 17px;
+}
+
+  #featured {
+    margin-top: 25px;
+    display: inline;
+
+  }
+
+}

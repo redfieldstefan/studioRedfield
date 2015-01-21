@@ -1,74 +1,37 @@
-.navigation {
-  width: 400px;
-  margin-left: 75px;
-  position: absolute;
-}
-
-.logo {
-  z-index: 10;
-  background: #99FFCC;
-  height: 75px;
-  width: 100%;
-}
-
-.logo h1 {
-  height: 75px;
-  width: 100%;
-  text-transform: uppercase;
-  padding-top: 25px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  z-index: 1;
-  position: absolute;
-
-}
-
 nav {
   width: 100%;
-  margin-top: -300px;
-  z-index: -1;
-  position: absolute;
-  
-}
-
-nav ul li {
-  height: 75px;
-  width: 100%;
-  background: #66FF99;
-  border-bottom: 1px solid white;
-  padding-left: 60px;
   padding-top: 25px;
+  float: left;
+}
+
+nav ul {
+  float: right;
+  padding-right: 7%;
+}
+
+nav li {
+  text-align: center;
+  display: inline;
+  padding-right: 25px;
+  color: black;
   text-transform: uppercase;
-  color: white;
+  font-size: 10px;
 }
 
-nav ul li:hover {
-  background: #66CC99;
+nav li:hover {
+  color: #707070 ;
 }
 
-.trigger {
-  height: 50px;
+@media (min-width: 530px){
+  nav li{
+    padding-right: 15px;
+    font-size: 15px;
+  } 
 }
 
-
-li.trigger {
-  padding-top: 15px;
-  background: black;
-  border-bottom: none;
-
-}
-
-li.trigger p {
+.menu .logo {
+  width: 150px;
   float: left;
+  margin-left: 27px;
+  margin-top: -25px;
 }
-
-li.trigger img {
-
-  float: left;
-  padding-left: 200px;
-  margin-top: -7px;
-
-}
-
-
