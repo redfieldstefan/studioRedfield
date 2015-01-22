@@ -85,10 +85,14 @@ h2 {
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
+  border-bottom: 3px solid #66CC99;
+  border-right: 3px solid #66CC99;
 }
 
 .index-options li:hover {
   background: tomato;
+  border-bottom: 3px solid #CC0033;
+  border-right: 3px solid #CC0033;
 }
 
 .index-options li a {

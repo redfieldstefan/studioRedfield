@@ -6,6 +6,7 @@
 .head {
 	padding-top: 25px;
 	float: left;
+  width: 100%;
 }
 
 .head .featured {
@@ -19,12 +20,13 @@
 .head .text {
 	width: 35%;
 	float: left;
-	padding-left: 50px;
+	padding-left: 3%;
 }
 
 .head p {
 	padding-top: 25px;
 	width: 70%;
+  font-size: 20px;
 }
 
 .medium-options {
@@ -52,41 +54,58 @@
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
+  border-right: 3px solid #66CC99;
+  border-bottom: 3px solid #66CC99;
 
 }
 
 .medium-options li:hover {
   background: tomato;
+  border-bottom: 3px solid #CC0033;
+  border-right: 3px solid #CC0033;
 }
 
-.medium-options li a {
-  
+.medium-options li a {  
   height: 100%;
   width: 100%;
-
-
 }
 
-.medium-options em li {
+.medium-options li.shop {
   background: #0097B2;
-  text-transform: none;
+  border-right: 3px solid #006699;
+  border-bottom: 3px solid #006699;
 }
 
-.medium-options em li:hover {
+.medium-options li.shop:hover {
   background: #CC0000;
+  border-bottom: 3px solid #990033;
+  border-right: 3px solid #990033;
 }
 
 .row {
   float: left;
   margin-left: 4%;
-  margin-top: 50px; 
+  margin-top: 100px; 
+  width:90%;
+  background: url('../img/ranny.jpg') no-repeat center center;
+  overflow: hidden;
+  padding-bottom: 40%;
 }
 
 .row .text {
 
-
+  width: 40%;
+  float: left;
+/*  background: gold;*/
 
 }
+
+.row .main-img {
+  width: 50%;
+  float: left;
+
+}
+
 
 @media (min-width: 800px){
 	
