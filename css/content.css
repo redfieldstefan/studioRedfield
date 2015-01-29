@@ -1,19 +1,17 @@
-.content {
-	width: 100%;
-	float: left;
-}
 
 .head {
 	padding-top: 25px;
+  padding-bottom: 50px;
 	float: left;
   width: 100%;
 }
 
 .head .featured {
-	width: 55%;
+	width: 57%;
 	float: left;
-	margin-left: 4%;
+	margin-left: 5%;
 	overflow: hidden;
+
 
 }
 
@@ -21,6 +19,10 @@
 	width: 35%;
 	float: left;
 	padding-left: 3%;
+}
+
+.head h1 {
+  color: tomato;
 }
 
 .head p {
@@ -48,21 +50,25 @@
   margin-bottom: 5px;
   padding-top: 33px;
   text-align: center;
-  background: #66FF99;
+  /*background: #66FF99;*/
+  background: #202020;
   font-weight: bold;
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   line-height: 1;
   text-transform: uppercase;
-  border-right: 3px solid #66CC99;
-  border-bottom: 3px solid #66CC99;
+/*  border-right: 3px solid #66CC99;
+  border-bottom: 3px solid #66CC99;*/
+  border-bottom: 3px solid #282828 ;
+  border-right: 3px solid #282828 ;
 
 }
 
 .medium-options li:hover {
-  background: tomato;
+  background: #720913;
   border-bottom: 3px solid #CC0033;
   border-right: 3px solid #CC0033;
+
 }
 
 .medium-options li a {  
@@ -71,9 +77,9 @@
 }
 
 .medium-options li.shop {
-  background: #0097B2;
-  border-right: 3px solid #006699;
-  border-bottom: 3px solid #006699;
+  background: tomato;
+  border-right: 3px solid #CC0033;
+  border-bottom: 3px solid #CC0033;
 }
 
 .medium-options li.shop:hover {
@@ -82,27 +88,126 @@
   border-right: 3px solid #990033;
 }
 
+/* GALLERY HEADER*/
+
+.gallery {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  color: black;
+  margin-top: 50px;
+   padding-bottom: 100px;
+
+}
+
+.gallery-head {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.gallery-head img {
+  width: 100%;
+  padding-bottom: 50px;
+
+}
+
+.gallery-selectors ul {
+
+  padding-left: 25px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+
+}
+
+.gallery-selectors li {
+
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 20%;
+  float: left;
+}
+
+
+.rows-head {
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: tomato;
+  padding-top: 50px;
+}
+
+.rows-head h1 {
+  font-weight: lighter;
+}
+
+
 .row {
   float: left;
   margin-left: 4%;
-  margin-top: 100px; 
+  margin-top: 50px; 
+  padding-bottom: 50px;
   width:90%;
-  background: url('../img/ranny.jpg') no-repeat center center;
   overflow: hidden;
-  padding-bottom: 40%;
+
 }
 
-.row .text {
 
+
+.row .text {
+  padding-left: 4%;
   width: 40%;
   float: left;
 /*  background: gold;*/
 
 }
 
-.row .main-img {
-  width: 50%;
+.row h1 {
+  color: #006666;
+  font-weight: lighter;
+}
+
+.row .text p {
+  width: 90%;
+  padding-top: 25px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.row .main-img  {
+  width: 60%;
   float: left;
+  padding: 0;
+
+}
+
+img.head {
+  padding: 0;
+}
+
+.row .selections li {
+  float: left;
+  width: 20%;
+  margin-top: 25px;
+  margin-right: 5px;
+
+}
+
+.next {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+.up {
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
 
 }
 

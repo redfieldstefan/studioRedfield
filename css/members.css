@@ -1,0 +1,49 @@
+.members-head {
+	width: 100%;
+	padding-top: 25px;
+}
+
+.members-head h1 {
+	text-align: center;
+	color: tomato;
+}
+
+.members {
+	float: left;
+	width: 90%;
+	margin-left: 7%;
+	margin-top: 25px;
+}
+
+.member {
+	width: 400px;
+	height: 400px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+
+}
+
+.member-text{
+	margin-top: -75px;
+	padding-left: 25px;
+	width: 100%;
+	
+
+}
+
+.member-text h2 {
+	color: tomato;
+	font-weight: 400;
+
+}
+
+.member-text h3{
+	color: white;
+	font-weight: lighter;
+}
+
+.member:hover {
+
+	border: 3px solid #66CC99;
+}

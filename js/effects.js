@@ -34,12 +34,115 @@ $('li.bags').mouseenter(function() {
 	$('#featured img').attr('src', 'img/wren-feature.jpg');
 })
 
-$('li.jewlery').mouseenter(function() {
+$('li.jewelry').mouseenter(function() {
 	$('#featured img').attr('src', 'img/kahill-feature.jpg');
 })
 
 $('li.cutlery').mouseenter(function() {
 	$('#featured img').attr('src', 'img/kotiach-feature.jpg');
+})
+
+
+//NAV
+
+
+	$('nav ul .collections').mouseenter(function(){
+
+			$('nav .options ul').css("display", "inline");
+
+	});
+
+
+	$('nav .options ul').mouseleave(function(){
+
+			$('nav .options ul').css("display", "none");
+
+	});
+
+
+
+//CONTENT PAGES
+
+$('.gallery li img').mouseenter(function(){
+	var thisImg = this.src;
+	console.log(thisImg);
+	$('.gallery .gallery-head img').attr('src', thisImg);
+})
+
+$('.row.ceramicsRandy .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.ceramicsRandy .main-img img').attr('src', thisImg);
+	})
+
+$('.row.ceramicsLaura .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.ceramicsLaura .main-img img').attr('src', thisImg);
+	})
+
+$('.row.ceramicsSusanne .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.ceramicsSusanne .main-img img').attr('src', thisImg);
+	})
+
+// $('.row .text li img').mouseenter(function(){
+// 	var thisImg = this.src;
+// 	console.log(thisImg);
+// 	$(this).parent.attr('src', thisImg)
+// })
+
+
+
+//TRANSISTION EFFECTS
+
+
+	$('.medium-options a:nth-child(1)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+
+    $('html, body').animate({ scrollTop: 800 }, 800);
+
+
+});
+
+		$('.medium-options a:nth-child(2)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+
+    $('html, body').animate({ scrollTop: 1550 }, 1600);
+});
+//                                       |    |
+//                                       |    --- duration (milliseconds) 
+//                                       ---- distance from the top
+
+		$('.medium-options a:nth-child(3)').click(function(event) {
+    // Preventing default action of the event
+    event.preventDefault();
+    // Getting the height of the document
+    var n = $(document).height();
+
+    $('html, body').animate({ scrollTop: 2300 }, 1600);
+});
+
+
+
+$('.up img').mouseenter(function(){
+	$('.up img').attr('src', "img/up-hover.png");	
+
+})
+
+$('.up img').mouseleave(function(){
+	$('.up img').attr('src', "img/up.png")	
+})
+
+$('.up').click(function(event) {
+	 event.preventDefault();
+    var n = $(document).height();
+    $('html, body').animate({ scrollTop: 0 }, 2000);
+
 })
 
 })//END

@@ -1,6 +1,7 @@
 
 @import 'nav.css';
 @import 'content.css';
+@import 'members.css';
 
 @-ms-viewport {
   width: device-width;
@@ -53,6 +54,11 @@ h2 {
 
  }
 
+ .content {
+  width: 100%;
+  float: left;
+}
+
 .index-menu {
   padding-top: 25px;
   margin-left: 4%;
@@ -79,18 +85,21 @@ h2 {
   margin-bottom: 5px;
   padding-top: 33px;
   text-align: center;
-  background: #66FF99;
+  /*background: #66FF99;*/
+  background: #202020;
   font-weight: bold;
   color: white;
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
-  border-bottom: 3px solid #66CC99;
-  border-right: 3px solid #66CC99;
+ /* border-bottom: 3px solid #66CC99;
+  border-right: 3px solid #66CC99;*/
+  border-bottom: 3px solid #282828 ;
+  border-right: 3px solid #282828 ;
 }
 
 .index-options li:hover {
-  background: tomato;
+  background: #720913;
   border-bottom: 3px solid #CC0033;
   border-right: 3px solid #CC0033;
 }
@@ -110,7 +119,11 @@ h2 {
   margin-top: 25px;
   margin-left: 25px;
   float: left;
+  z-index: -2;
 }
+
+
+
 
 @media (min-width: 575px) {
 

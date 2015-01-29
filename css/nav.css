@@ -2,11 +2,14 @@ nav {
   width: 100%;
   padding-top: 25px;
   float: left;
+  background: white;
+
 }
 
 nav ul {
   float: right;
   padding-right: 7%;
+  background: white;
 }
 
 nav li {
@@ -22,6 +25,51 @@ nav li:hover {
   color: #707070 ;
 }
 
+nav .options {
+  display: inline;
+
+
+}
+
+nav .options ul {
+  background: #202020;
+  width: 120px;
+  position: absolute;
+  margin-top: 25px;
+  margin-left: -113px;
+  padding-bottom: 5px;
+  display: none;
+
+
+}
+
+nav li.collections a{
+  text-decoration: none;
+  color: black;
+}
+
+nav .options ul a {
+  float: none;
+   width: 100%;
+
+
+}
+
+nav .options ul a li {
+  padding-left: 20px;
+  width: 100%;
+  font-size: 12px;
+  color: white;
+
+
+}
+
+nav .options ul a :hover {
+  color: tomato;
+ 
+}
+
+
 @media (min-width: 530px){
   nav li{
     padding-right: 15px;
@@ -32,6 +80,6 @@ nav li:hover {
 .menu .logo {
   width: 150px;
   float: left;
-  margin-left: 27px;
+  margin-left: 4%;
   margin-top: -25px;
 }
