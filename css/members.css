@@ -16,6 +16,43 @@
 }
 
 .member {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+
+}
+
+.member-text{
+	margin-top: -75px;
+	padding-left: 15px;
+	width: 100%;
+	
+
+}
+
+.member-text h2 {
+	color: tomato;
+	font-weight: bold;
+	font-size: 12px;
+
+}
+
+.member-text h3{
+	color: white;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.member:hover {
+
+	border: 3px solid #66CC99;
+}
+
+@media (min-width: 450px){
+
+	.member {
 	width: 400px;
 	height: 400px;
 	float: left;
@@ -35,15 +72,14 @@
 .member-text h2 {
 	color: tomato;
 	font-weight: 400;
+	font-size: 24px;
 
 }
 
 .member-text h3{
 	color: white;
 	font-weight: lighter;
+	font-size: 18px;
 }
 
-.member:hover {
-
-	border: 3px solid #66CC99;
 }

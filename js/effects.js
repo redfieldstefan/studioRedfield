@@ -43,6 +43,7 @@ $('li.cutlery').mouseenter(function() {
 })
 
 
+
 //NAV
 
 
@@ -90,6 +91,41 @@ $('.row.ceramicsSusanne .text li img').mouseenter(function(){
 // 	$(this).parent.attr('src', thisImg)
 // })
 
+
+//Fine Art
+
+$('.row.paintingRedfield .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.paintingRedfield .main-img img').attr('src', thisImg);
+	})
+
+$('.row.paintingBurck .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.paintingBurck .main-img img').attr('src', thisImg);
+	})
+
+$('.row.paintingMiller .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.paintingMiller .main-img img').attr('src', thisImg);
+	})
+
+
+
+//CUTLERY
+
+$('.row.chefsforge .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.chefsforge .main-img img').attr('src', thisImg);
+	})
+
+
+
+//TEXTILE
+
+$('.row.wren .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.wren .main-img img').attr('src', thisImg);
+	})
 
 
 //TRANSISTION EFFECTS

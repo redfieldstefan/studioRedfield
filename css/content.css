@@ -4,6 +4,45 @@
   padding-bottom: 50px;
 	float: left;
   width: 100%;
+  background: red ;
+
+}
+
+.head.tile {
+  background: url('../img/tile/775x450-tile-head.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head.ceramics {
+  background: url('../img/ceramics-page-head.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head.paintings {
+  background: url('../img/fineArt/775x450-fineArt-head.jpg') no-repeat center center;
+ /* background: url('../img/miller-feature.jpg') no-repeat center center;*/
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head.cutlery {
+  background: url('../img/cutlery/775x450-cutlery-head.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head.jewelry {
+  background: url('../img/jewlery/775x450-jewlery-head.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.head.textile {
+  background: url('../img/textile/1450x600-wren-head.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .head .featured {
@@ -16,9 +55,16 @@
 }
 
 .head .text {
-	width: 35%;
+	width: 90%;
 	float: left;
-	padding-left: 3%;
+  font-size: 10px;
+	margin-left: 5%;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.head .text.white {
+  color: white;
 }
 
 .head h1 {
@@ -27,8 +73,12 @@
 
 .head p {
 	padding-top: 25px;
-	width: 70%;
-  font-size: 20px;
+	width: 100%;
+  font-size: 14px;
+}
+
+.content {
+  background: white;
 }
 
 .medium-options {
@@ -96,15 +146,15 @@
   margin-left: auto;
   color: black;
   margin-top: 50px;
-   padding-bottom: 100px;
+  padding-bottom: 100px;
 
 }
 
 .gallery-head {
-  width: 60%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  float: left;
+  /*float: left;*/
 }
 
 .gallery-head img {
@@ -116,9 +166,10 @@
 .gallery-selectors ul {
 
   padding-left: 25px;
-  width: 40%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 50px;
   float: left;
 
 }
@@ -158,8 +209,8 @@
 
 
 .row .text {
-  padding-left: 4%;
-  width: 40%;
+  padding-left: 0%;
+  width: 100%;
   float: left;
 /*  background: gold;*/
 
@@ -170,16 +221,19 @@
   font-weight: lighter;
 }
 
-.row .text p {
-  width: 90%;
+.row .paragraphs{
   padding-top: 25px;
-  font-size: 18px;
+}
+
+.row .text p {
+  width: 100%;
+  padding-top: 10px;
+  font-size: 14px;
   text-align: justify;
 }
 
 .row .main-img  {
-  width: 60%;
-  float: left;
+  width: 100%;
   padding: 0;
 
 }
@@ -200,7 +254,7 @@ img.head {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 25px;
+  padding-top: 50px;
 }
 
 .up {
@@ -212,6 +266,77 @@ img.head {
 }
 
 
-@media (min-width: 800px){
+@media (min-width: 450px){
+
+  .head .text {
+  width: 80%;
+  font-size: 15px;
+  margin-left: 20%;
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.head p {
+  padding-top: 25px;
+  width: 70%;
+  font-size: 18px;
+}
+
+.gallery-head {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+
+.gallery-selectors ul {
+
+  padding-left: 25px;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+
+}
+
+
 	
+}/*END 450 PX*/
+
+@media (min-width: 1000px){
+   .head .text {
+  width: 35%;
+  margin-left: 60%;
+  margin-top: 50px;
+  padding-bottom: 75px;
+}
+
+.head p {
+  padding-top: 25px;
+  width: 90%;
+  font-size: 20px;
+}
+
+.row .main-img  {
+  width: 60%;
+  float: left;
+  padding: 0;
+
+}
+
+.row .text {
+  padding-left: 4%;
+  width: 40%;
+  float: left;
+
+
+}
+
+.row .text p {
+  width: 90%;
+  font-size: 18px;
+
+}
+
+
 }

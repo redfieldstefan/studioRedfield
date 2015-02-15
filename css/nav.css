@@ -2,20 +2,20 @@ nav {
   width: 100%;
   padding-top: 25px;
   float: left;
-  background: white;
+/*  background: white;*/
 
 }
 
 nav ul {
-  float: right;
-  padding-right: 7%;
-  background: white;
+  float: left;
+  padding-left: 25px;
+  /*background: white;*/
 }
 
 nav li {
   text-align: center;
   display: inline;
-  padding-right: 25px;
+  padding-right: 15px;
   color: black;
   text-transform: uppercase;
   font-size: 10px;
@@ -33,10 +33,10 @@ nav .options {
 
 nav .options ul {
   background: #202020;
-  width: 120px;
+  width: 100px;
   position: absolute;
   margin-top: 25px;
-  margin-left: -113px;
+  margin-left: -75px;
   padding-bottom: 5px;
   display: none;
 
@@ -56,9 +56,12 @@ nav .options ul a {
 }
 
 nav .options ul a li {
-  padding-left: 20px;
+  float: none;
+  display: inline-block;
+  text-align: left;
+  margin-left: -15px;
   width: 100%;
-  font-size: 12px;
+  font-size: 10px;
   color: white;
 
 
@@ -69,17 +72,48 @@ nav .options ul a :hover {
  
 }
 
-
-@media (min-width: 530px){
-  nav li{
-    padding-right: 15px;
-    font-size: 15px;
-  } 
-}
-
 .menu .logo {
   width: 150px;
   float: left;
   margin-left: 4%;
   margin-top: -25px;
 }
+
+
+@media (min-width: 530px){
+  
+      nav ul {
+      float: right;
+      padding-right: 5%;
+      /*background: white;*/
+    }
+
+      nav li{
+        padding-right: 25px;
+        font-size: 15px;
+        text-align: center;
+      }
+
+
+      nav .options ul {
+      width: 120px;
+      margin-top: 25px;
+      margin-left: -113px;
+      padding-bottom: 5px;
+      display: none;
+
+
+    } 
+
+    nav .options ul a li{
+        text-align: center;
+        padding-left: 0px;
+        width: 100%;
+        font-size: 12px;
+        color: white;
+
+    }
+
+
+}
+

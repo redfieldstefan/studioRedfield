@@ -20,7 +20,7 @@ html {
   font-family: 'Raleway', sans-serif;
   min-height: 100%;
   position: relative;
-  padding-bottom: 12em;
+
 }
 
 body {
@@ -67,13 +67,17 @@ h2 {
 
 }
 
+
+
 .logo {
   width: 100%;
 
 }
 
+
 .index-options {
   padding-left: 1%;
+ /* padding-top: 50px;*/
 
 }
 
