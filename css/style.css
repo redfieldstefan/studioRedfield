@@ -64,7 +64,7 @@ h2 {
   margin-left: 4%;
   width: 90%;
   float: left;
-
+  padding-bottom: 25px;
 }
 
 
@@ -78,7 +78,7 @@ h2 {
 .index-options {
   padding-left: 1%;
  /* padding-top: 50px;*/
-
+  
 }
 
 .index-options li {

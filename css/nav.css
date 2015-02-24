@@ -1,15 +1,15 @@
-nav {
+/*nav {
   width: 100%;
   padding-top: 25px;
   float: left;
-/*  background: white;*/
+
 
 }
 
 nav ul {
   float: left;
   padding-left: 25px;
-  /*background: white;*/
+
 }
 
 nav li {
@@ -85,7 +85,7 @@ nav .options ul a :hover {
       nav ul {
       float: right;
       padding-right: 5%;
-      /*background: white;*/
+      background: white;
     }
 
       nav li{
@@ -114,6 +114,123 @@ nav .options ul a :hover {
 
     }
 
+}*/
+
+nav {
+  width: 100%;
+  padding-top: 25px;
+  float: left;
+
 
 }
 
+nav ul {
+    /*width: 50%;*/
+    list-style: none;
+    float: right;
+    position: relative;
+    display: inline-table;
+    z-index: 10;
+    padding-right: 2%;
+
+  }
+
+        nav ul:after{
+          content: '';
+          clear: both;
+          display: block;
+        }
+
+nav ul li {
+  float: left;
+ /* width: 12%;*/
+  /*text-align: center;*/
+  padding-right: 15px;
+
+}
+
+  
+  nav ul li:hover {
+    /*border-bottom: 3px solid #CC0033;*/
+
+  }
+
+         nav ul li:hover a {
+                  /*color: #fff;*/
+                }
+
+
+          nav ul li:hover > ul{
+            display: block;
+          }
+
+
+ nav ul li a {
+    display: block; 
+    color: black; 
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 7px;
+
+  }
+
+  nav ul li a:hover{
+    color: tomato;
+  }
+
+
+nav ul ul {
+  display: none;
+  background: white;
+  border-radius: 0px;
+  padding: 0;
+  margin-left: 0;
+  position: absolute;
+  top: 100%;
+  width: 22%;
+
+}
+
+
+nav ul ul li {
+    float: none; 
+    /*border-bottom: 1px solid white;*/
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    padding-left: 10px;
+    padding-right: none;
+    background: #202020;
+  }
+
+nav ul ul li a {
+  color: white;
+}
+
+.menu .logo {
+  width: 150px;
+  float: left;
+  margin-left: 4%;
+  margin-top: -25px;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 530px) {
+
+  nav ul {
+     padding-right: 6%;
+  }
+
+  nav ul li {
+    padding-right: 30px;
+  }
+  
+   nav ul li a {
+    font-size: 14px;
+   }
+}
