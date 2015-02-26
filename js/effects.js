@@ -110,6 +110,23 @@ $('.row.paintingMiller .text li img').mouseenter(function(){
 	})
 
 
+//Tile
+
+$('.row.kibaktile .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.kibaktile .main-img img').attr('src', thisImg);
+	})
+
+$('.row.tileCsicsko .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.tileCsicsko .main-img img').attr('src', thisImg);
+	})
+
+$('.row.tileDegandoerfer .text li img').mouseenter(function(){
+		var thisImg = this.src;
+		$('.row.tileDegandoerfer .main-img img').attr('src', thisImg);
+	})
+
 
 //CUTLERY
 

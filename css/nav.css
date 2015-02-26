@@ -116,12 +116,21 @@ nav .options ul a :hover {
 
 }*/
 
+.menu {
+  width: 100%;
+  position: absolute;
+}
+
 nav {
   width: 100%;
-  padding-top: 25px;
+  padding-top: 5px;
   float: left;
 
 
+}
+
+.index nav {
+  width: 100%;
 }
 
 nav ul {
@@ -177,8 +186,13 @@ nav ul li {
 
   }
 
+nav.white ul li a {
+  color: white;
+}
+
   nav ul li a:hover{
     color: tomato;
+    font-weight: bold;
   }
 
 
@@ -211,7 +225,7 @@ nav ul ul li a {
 }
 
 .menu .logo {
-  width: 150px;
+  width: 10%;
   float: left;
   margin-left: 4%;
   margin-top: -25px;
@@ -222,6 +236,10 @@ nav ul ul li a {
 
 @media (min-width: 530px) {
 
+  nav {
+  width: 85%;
+  padding-top: 25px;
+}
   nav ul {
      padding-right: 6%;
   }

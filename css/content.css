@@ -9,7 +9,7 @@
 }
 
 .head.tile {
-  background: url('../img/tile/775x450-tile-head.jpg') no-repeat center center;
+  background: url('../img/tile/1450x600-tile-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -28,13 +28,13 @@
 }
 
 .head.cutlery {
-  background: url('../img/cutlery/775x450-cutlery-head.jpg') no-repeat center center;
+  background: url('../img/cutlery/1450x600-cutlery-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.jewelry {
-  background: url('../img/jewlery/775x450-jewlery-head.jpg') no-repeat center center;
+  background: url('../img/jewelry/1450x600-jewelry-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -59,7 +59,7 @@
 	float: left;
   font-size: 10px;
 	margin-left: 5%;
-  margin-top: 25px;
+  margin-top: 50px;
   padding-bottom: 25px;
 }
 
@@ -254,7 +254,12 @@ img.head {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+ 
+}
+
+.next img {
+
+
 }
 
 .up {
@@ -307,7 +312,7 @@ img.head {
    .head .text {
   width: 35%;
   margin-left: 60%;
-  margin-top: 50px;
+  margin-top: 200px;
   padding-bottom: 75px;
 }
 
@@ -321,6 +326,7 @@ img.head {
   width: 60%;
   float: left;
   padding: 0;
+  padding-top: 85px;
 
 }
 
