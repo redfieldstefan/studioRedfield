@@ -8,14 +8,21 @@
 
 }
 
+.head.contact {
+  background: url('../img/contact-head.jpg') no-repeat center center;
+  background-size: cover;
+  height: 750px;
+
+}
+
 .head.tile {
-  background: url('../img/tile/1450x600-tile-head.jpg') no-repeat center center;
+  background: url('../img/tile/775x450-tile-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.ceramics {
-  background: url('../img/ceramics-page-head.jpg') no-repeat center center;
+  background: url('../img/ceramics/500x600-ceramics-head-mobile.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -69,6 +76,12 @@
   color: white;
 }
 
+.text a {
+  color: #99FF99;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .head .text.background {
  
   background: white;
@@ -84,6 +97,11 @@
 	width: 100%;
   font-size: 14px;
 }
+
+/*.head a {
+  color: tomato;
+  text-decoration: underline;
+}*/
 
 .content {
   background: white;
@@ -280,6 +298,12 @@ img.head {
 
 
 @media (min-width: 450px){
+
+  .head.ceramics {
+  background: url('../img/ceramics-page-head.jpg') no-repeat center center;
+   background-size: cover;
+  background-attachment: fixed;
+}
 
   .head .text {
   width: 80%;

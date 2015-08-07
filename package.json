@@ -1,0 +1,25 @@
+{
+  "name": "studioRedfield",
+  "version": "1.0.0",
+  "description": "",
+  "main": "grunt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redfieldstefan/studioRedfield.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redfieldstefan/studioRedfield/issues"
+  },
+  "homepage": "https://github.com/redfieldstefan/studioRedfield",
+  "devDependencies": {},
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.3"
+  }
+}

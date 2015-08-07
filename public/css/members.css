@@ -1,6 +1,6 @@
 .members-head {
 	width: 100%;
-	padding-top: 25px;
+	padding-top: 100px;
 }
 
 .members-head h1 {
@@ -45,19 +45,21 @@
 	font-size: 12px;
 }
 
-.member:hover {
+/*.member:hover {
 
 	border: 3px solid #66CC99;
-}
+}*/
 
 @media (min-width: 450px){
 
 	.member {
-	width: 400px;
-	height: 400px;
+	width: 30%;
+	height: auto;
+	/*height: 400px;*/
 	float: left;
 	margin-right: 10px;
-	margin-top: 10px;
+	margin-top: 35px;
+
 
 }
 

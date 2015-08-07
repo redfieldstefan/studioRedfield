@@ -236,9 +236,18 @@ nav ul ul li a {
 
 @media (min-width: 530px) {
 
+.menu.contact nav {
+  padding-top: 25px;
+}
+
+.menu.contact .logo {
+  margin-top: 0;
+}
+
+
   nav {
   width: 85%;
-  padding-top: 25px;
+ /* padding-top: 25px;*/
 }
   nav ul {
      padding-right: 6%;
