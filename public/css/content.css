@@ -9,45 +9,45 @@
 }
 
 .head.contact {
-  background: url('../img/contact-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/contact-head.jpg') no-repeat center center;
   background-size: cover;
   height: 750px;
 
 }
 
 .head.tile {
-  background: url('../img/tile/775x450-tile-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/tile/775x450-tile-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.ceramics {
-  background: url('../img/ceramics/500x600-ceramics-head-mobile.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/ceramics/500x600-ceramics-head-mobile.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.paintings {
-  background: url('../img/fineArt/775x450-fineArt-head.jpg') no-repeat center center;
- /* background: url('../img/miller-feature.jpg') no-repeat center center;*/
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/fineArt/775x450-fineArt-head.jpg') no-repeat center center;
+ /* background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/miller-feature.jpg') no-repeat center center;*/
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.cutlery {
-  background: url('../img/cutlery/1450x600-cutlery-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/cutlery/1450x600-cutlery-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.jewelry {
-  background: url('../img/jewelry/1450x600-jewelry-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/jewelry/1450x600-jewelry-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .head.textile {
-  background: url('../img/textile/1450x600-wren-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/textile/1450x600-wren-head.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -83,7 +83,7 @@
 }
 
 .head .text.background {
- 
+
   background: white;
   padding-left: 25px;
 }
@@ -147,7 +147,7 @@
 
 }
 
-.medium-options li a {  
+.medium-options li a {
   height: 100%;
   width: 100%;
 }
@@ -225,7 +225,7 @@
 .row {
   float: left;
   margin-left: 4%;
-  margin-top: 50px; 
+  margin-top: 50px;
   padding-bottom: 50px;
   width:90%;
   overflow: hidden;
@@ -280,7 +280,7 @@ img.head {
   width: 50px;
   margin-left: auto;
   margin-right: auto;
- 
+
 }
 
 .next img {
@@ -300,7 +300,7 @@ img.head {
 @media (min-width: 450px){
 
   .head.ceramics {
-  background: url('../img/ceramics-page-head.jpg') no-repeat center center;
+  background: url('https://s3-us-west-2.amazonaws.com/studio-redfield/img/ceramics-page-head.jpg') no-repeat center center;
    background-size: cover;
   background-attachment: fixed;
 }
@@ -337,7 +337,7 @@ img.head {
 }
 
 
-	
+
 }/*END 450 PX*/
 
 @media (min-width: 1000px){

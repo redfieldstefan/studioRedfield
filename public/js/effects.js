@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 
 // 	$('nav').mouseenter(function(){
-		
+
 // 			$('nav').animate({marginTop: '0'}, 500);
 // 			// $('.trigger').css({display: "none"});
 // 			// $('.trigger2').css({display: "inline"});
@@ -14,32 +14,32 @@ $(document).ready(function(){
 // 			$('nav').animate({marginTop: '-300'}, 500);
 // 			// $('.trigger').css({display: "inline"});
 // 			// $('.trigger2').css({display: "none"});
-			
+
 // 		});
 
 
 $('li.tile').mouseenter(function() {
-	$('#featured img').attr('src', 'img/kibaktile-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/kibaktile-feature.jpg');
 })
 
 $('li.ceramics').mouseenter(function() {
-	$('#featured img').attr('src', 'img/ceramic-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/ceramic-feature.jpg');
 })
 
 $('li.paintings').mouseenter(function() {
-	$('#featured img').attr('src', 'img/miller-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/miller-feature.jpg');
 })
 
 $('li.bags').mouseenter(function() {
-	$('#featured img').attr('src', 'img/wren-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/wren-feature.jpg');
 })
 
 $('li.jewelry').mouseenter(function() {
-	$('#featured img').attr('src', 'img/kahill-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/kahill-feature.jpg');
 })
 
 $('li.cutlery').mouseenter(function() {
-	$('#featured img').attr('src', 'img/kotiach-feature.jpg');
+	$('#featured img').attr('src', 'https://s3-us-west-2.amazonaws.com/studio-redfield/img/kotiach-feature.jpg');
 })
 
 
@@ -66,7 +66,6 @@ $('li.cutlery').mouseenter(function() {
 
 $('.gallery li img').mouseenter(function(){
 	var thisImg = this.src;
-	console.log(thisImg);
 	$('.gallery .gallery-head img').attr('src', thisImg);
 })
 
@@ -83,14 +82,7 @@ $('.row.ceramicsLaura .text li img').mouseenter(function(){
 $('.row.ceramicsSusanne .text li img').mouseenter(function(){
 		var thisImg = this.src;
 		$('.row.ceramicsSusanne .main-img img').attr('src', thisImg);
-	})
-
-// $('.row .text li img').mouseenter(function(){
-// 	var thisImg = this.src;
-// 	console.log(thisImg);
-// 	$(this).parent.attr('src', thisImg)
-// })
-
+	});
 
 //Fine Art
 
@@ -168,7 +160,7 @@ $('.row.wren .text li img').mouseenter(function(){
     $('html, body').animate({ scrollTop: 1550 }, 1600);
 });
 //                                       |    |
-//                                       |    --- duration (milliseconds) 
+//                                       |    --- duration (milliseconds)
 //                                       ---- distance from the top
 
 		$('.medium-options a:nth-child(3)').click(function(event) {
@@ -183,12 +175,12 @@ $('.row.wren .text li img').mouseenter(function(){
 
 
 $('.up img').mouseenter(function(){
-	$('.up img').attr('src', "img/up-hover.png");	
+	$('.up img').attr('src', "https://s3-us-west-2.amazonaws.com/studio-redfield/img/up-hover.png");
 
 })
 
 $('.up img').mouseleave(function(){
-	$('.up img').attr('src', "img/up.png")	
+	$('.up img').attr('src', "https://s3-us-west-2.amazonaws.com/studio-redfield/img/up.png")
 })
 
 $('.up').click(function(event) {
