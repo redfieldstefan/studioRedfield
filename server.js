@@ -4,6 +4,7 @@ var path = require('path');
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var compress = require('compression');
 var router = express.Router();
 
 process.env.APP_SECRET = process.env.APP_SECRET || 'stefanredfield.com'
@@ -12,6 +13,7 @@ app.use([
   express.static(path.join(__dirname, '/production')),
   bodyParser.json()
 ]);
+app.use(compress());
 
 app.listen(PORT, function() {
   console.log('SERVER IS WERKIN HARD ON PORT ' + PORT )
