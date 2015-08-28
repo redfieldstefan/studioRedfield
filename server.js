@@ -9,7 +9,7 @@ var router = express.Router();
 process.env.APP_SECRET = process.env.APP_SECRET || 'stefanredfield.com'
 
 app.use([
-  express.static(path.join(__dirname, '/public')),
+  express.static(path.join(__dirname, '/production')),
   bodyParser.json()
 ]);
 
