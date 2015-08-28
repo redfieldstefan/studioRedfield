@@ -1,0 +1,42 @@
+<section data-ng-controller="MainController">
+
+  <nav id="home">
+    <ul>
+      <li data-ng-click="redirect('')">Home</li>
+      <li data-ng-click="redirect('artists')">Artists</li>
+      <li>Collections
+        <ul>
+          <li data-ng-click="redirect('ceramics')">Ceramics</li>
+          <li data-ng-click="redirect('tile')">Tile</li>
+          <li data-ng-click="redirect('paintings')">Fine Art</li>
+          <li data-ng-click="redirect('textile')">Textile</li>
+          <li data-ng-click="redirect('jewelry')">Jewelry</li>
+          <li data-ng-click="redirect('cutlery')">Cutlery</li>
+        </ul>
+      </li>
+      <li data-ng-click="redirect('contact')">Contact</li>
+    </ul>
+  </nav>
+
+  <div class ="index-menu">
+    <div class = "logo">
+      <img src="https://s3-us-west-2.amazonaws.com/studio-redfield/img/logo.png"/>
+    </div>
+
+    <div class = "index-options">
+      <ul>
+        <li data-ng-click="redirect('tile')" class="tile">Tile</li>
+        <li data-ng-click="redirect('ceramics')" class="ceramics">Ceramics</li>
+        <li data-ng-click="redirect('paintings')" class="paintings">Paintings</li>
+        <li data-ng-click="redirect('jewelry')" class="jewelry">Jewelry</li>
+        <li data-ng-click="redirect('textile')" class="bags">Handmade Bags</li>
+        <li data-ng-click="redirect('cutlery')" class="cutlery">Cutlery</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id ="featured">
+    <img src ="https://s3-us-west-2.amazonaws.com/studio-redfield/img/rrbowl-1.jpg"/>
+  </div>
+
+</section>
