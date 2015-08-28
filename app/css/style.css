@@ -1,0 +1,172 @@
+@import 'normalize.css';
+@import 'nav.css';
+@import 'content.css';
+@import 'members.css';
+
+@-ms-viewport {
+  width: device-width;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+  list-style: none;
+
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+  min-height: 100%;
+  position: relative;
+
+}
+
+body {
+ 	font: 'Raleway', sans-serif;
+  line-height: 1.5em;
+  width: 100%
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1{
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.content {
+  width: 100%;
+  float: left;
+}
+
+.index-menu {
+  padding-top: 25px;
+  margin-left: 4%;
+  width: 90%;
+  float: left;
+  padding-bottom: 25px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.index-options {
+  padding-left: 1%;
+}
+
+.index-options li {
+  width: 32.3%;
+  height: 75px;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  padding-top: 33px;
+  text-align: center;
+  background: #202020;
+  font-weight: bold;
+  color: white;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase;
+  border-bottom: 3px solid #282828 ;
+  border-right: 3px solid #282828 ;
+}
+
+.index-options li:hover {
+  background: #720913;
+  border-bottom: 3px solid #CC0033;
+  border-right: 3px solid #CC0033;
+  cursor: pointer;
+}
+
+.index-options li a {
+
+  height: 100%;
+  width: 100%;
+
+
+}
+
+#featured {
+  width: 50%;
+  display: none;
+  /*padding-bottom: 41%;*/
+  margin-top: 25px;
+  margin-left: 50px;
+  float: left;
+  z-index: -2;
+}
+
+
+
+
+@media (min-width: 575px) {
+
+  .index-menu {
+  padding-top: 25px;
+  margin-left: 6%;
+  width: 35%;
+  float: left;
+
+}
+
+.index-options li {
+  font-size: 10px;
+  height: 50px;
+  padding-top: 17px;
+}
+
+  #featured {
+    margin-top: 75px;
+    display: inline;
+  }
+
+}
+
+@media (min-width: 830px) {
+
+  .index-menu {
+  padding-top: 25px;
+  margin-left: 6%;
+  width: 35%;
+  float: left;
+
+}
+
+.index-options li {
+  font-size: 15px;
+  height: 50px;
+  padding-top: 17px;
+}
+
+  #featured {
+    margin-top: 25px;
+    display: inline;
+
+  }
+
+}
