@@ -5,7 +5,8 @@
   "main": "grunt.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "db": "mongod --dbpath=./data"
   },
   "repository": {
     "type": "git",
@@ -34,8 +35,15 @@
     "webpack-dev-server": "^1.10.1"
   },
   "dependencies": {
+    "aws-sdk": "^2.2.37",
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.13.3",
     "compression": "^1.5.2",
-    "express": "^4.13.3"
+    "eat": "^0.1.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.4.4",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "uuid": "^2.0.1"
   }
 }
