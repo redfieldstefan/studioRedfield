@@ -12,8 +12,8 @@ var S3_BUCKET = process.env.S3_BUCKET;
 var AWS_region = process.env.AWS_REGION;
 
 var AWS_config = {
-    accessKeyId: 'AKIAIX27QQSBQYUX33WA',
-    secretAccessKey: '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'
+    accessKeyId: //NEED TO FIGURE OUT HOW TO DO THIS
+    secretAccessKey: //NEED TO FIGURE OUT HOW TO DO THIS
 };
 
 module.exports = function(router) {
