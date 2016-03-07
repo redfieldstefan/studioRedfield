@@ -68,11 +68,11 @@ StudioRedfieldApp.config(['$routeProvider', function($routeProvider){
       templateUrl: 'views/catalogue/pattern-template.html',
       controller: 'PatternController'
     })
-    .when('/catalogue/signin', {
-      templateUrl: 'views/catalogue/signin.html',
+    .when('/login', {
+      templateUrl: 'views/catalogue/login.html',
       controller: 'AuthController'
     })
-    .when('/catalogue/create-pattern', {
+    .when('/create-pattern', {
       templateUrl: 'views/catalogue/create-pattern.html',
       controller: 'PatternsController'
     })
