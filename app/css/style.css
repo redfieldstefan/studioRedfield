@@ -2,6 +2,7 @@
 @import 'nav.css';
 @import 'content.css';
 @import 'members.css';
+@import 'catalogue.css';
 
 @-ms-viewport {
   width: device-width;
@@ -13,7 +14,6 @@
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
   list-style: none;
-
 }
 
 html {
@@ -47,10 +47,25 @@ h2 {
   font-weight: lighter;
 }
 
+input {
+  height: 35px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   clear: both;
+  float: left;
 }
 
 .content {
@@ -104,41 +119,71 @@ h2 {
 }
 
 .index-options li a {
-
   height: 100%;
   width: 100%;
-
-
 }
 
 #featured {
   width: 50%;
   display: none;
-  /*padding-bottom: 41%;*/
   margin-top: 25px;
   margin-left: 50px;
   float: left;
   z-index: -2;
 }
 
+#sign-in {
+  width: 100%;
+}
 
+#sign-in form {
+  margin-top: 200px;
+  width: 35%;
+}
 
+#sign-in form input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#sign-in form button {
+  width: 100%;
+  height: 35px;
+  background-color: tomato;
+  color: white;
+  border: none;
+}
+
+#sign-in form button:hover {
+  background-color: Salmon;
+}
+
+.background-tomato {
+  width: 100%;
+  height: 35px;
+  background-color: tomato;
+  color: white;
+  border: none;
+}
+
+button.background-tomato:hover {
+  background-color: Salmon;
+}
 
 @media (min-width: 575px) {
 
   .index-menu {
-  padding-top: 25px;
-  margin-left: 6%;
-  width: 35%;
-  float: left;
+    padding-top: 25px;
+    margin-left: 6%;
+    width: 35%;
+    float: left;
+  }
 
-}
-
-.index-options li {
-  font-size: 10px;
-  height: 50px;
-  padding-top: 17px;
-}
+  .index-options li {
+    font-size: 10px;
+    height: 50px;
+    padding-top: 17px;
+  }
 
   #featured {
     margin-top: 75px;
@@ -150,23 +195,21 @@ h2 {
 @media (min-width: 830px) {
 
   .index-menu {
-  padding-top: 25px;
-  margin-left: 6%;
-  width: 35%;
-  float: left;
+    padding-top: 25px;
+    margin-left: 6%;
+    width: 35%;
+    float: left;
+  }
 
-}
-
-.index-options li {
-  font-size: 15px;
-  height: 50px;
-  padding-top: 17px;
-}
+  .index-options li {
+    font-size: 15px;
+    height: 50px;
+    padding-top: 17px;
+  }
 
   #featured {
     margin-top: 25px;
     display: inline;
-
   }
 
 }

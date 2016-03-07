@@ -14,7 +14,7 @@ var authRoutes = express.Router();
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/studio_redfield_dev');
 process.env.APP_SECRET = process.env.APP_SECRET || 'stefanredfield.com';
 
-require('./api/controllers/PatternController')(patternRoutes);
+require('./api/controllers/PatternController')(patternRoutes, process.env.API_KEY, process.env.API_SECRET);
 require('./api/controllers/AuthController')(authRoutes);
 require('./lib/passport_strategy')(passport);
 

@@ -16,7 +16,6 @@ userSchema.methods.generateHash = function(password, callback) {
       if (err) {
         callback(err);
       }
-
       callback(null, hash);
     });
   });
@@ -27,7 +26,6 @@ userSchema.methods.checkPassword = function(password, callback) {
     if (err) {
       callback(err);
     }
-
     callback(null, res);
   });
 };
