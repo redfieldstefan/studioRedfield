@@ -36,7 +36,7 @@ module.exports = function(app) {
           $scope.validationErrorMessage = validationErrors.join('\n');
           return $scope.hasValidationErrors = true;
         }
-        $location.path('/catalogue/create-pattern');
+        $location.path('/create-pattern');
 
       });
     };
