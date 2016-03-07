@@ -42,6 +42,7 @@ module.exports = function(router) {
   });
 
   router.get('/admin/sign-in', passport.authenticate('basic', {session: false}), function(req, res) {
+
     if (!('error' in req.user)) {
       req.user.generateToken(process.env.APP_SECRET, function(err, token) {
         if (err) {
@@ -52,9 +53,7 @@ module.exports = function(router) {
             .json({
               success: true,
               message: 'Authentication passed',
-              result: {
-                token: token
-              }
+              token: token
             });
         }
       });

@@ -1,0 +1,28 @@
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.32.min.js"></script>
+
+<section id="create-pattern" data-ng-controller="PatternsController" data-ng-init="isSignedIn()">
+  <section data-nav-head></section>
+  <div class="container-catalogue">
+    <h1 class="text-center">Add Pattern</h1>
+
+    <form class="center">
+      <input type="text" placeholder="Title" data-ng-model="pattern.title">
+      <textarea placeholder="description" data-ng-model="pattern.description"></textarea>
+      <select data-ng-model="pattern.category">
+        <option value="" selected>Category</option>
+        <option value="modern">Modern</option>
+        <option value="organic">Organic</option>
+        <option value="timeless">Timeless</option>
+        <option value="hex-shapes">Hex Shapes</option>
+        <option value="borders">Borders</option>
+      </select>
+      <select data-ng-model="pattern.display">
+        <option value="" selected>Display</option>
+        <option value="standard">Standard</option>
+        <option value="organic">Line</option>
+      </select>
+      <input id="file-selector" class="center" type="file"></input>
+      <button class="center background-tomato" data-ng-click="uploadAndSave(pattern)">Create Pattern</button>
+    </form>
+  </div>
+</section>

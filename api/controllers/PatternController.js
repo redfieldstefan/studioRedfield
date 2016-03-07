@@ -3,28 +3,21 @@
 var Pattern = require('../models/Pattern.js');
 var bodyparser = require('body-parser');
 var fs = require('fs');
-var eatAuth = require('../../lib/eat_auth')(process.env.APP_SECRET);
+var eatAuth = require('../../lib/eat_auth')(process.env.APP_SECRET || 'catwalk');
+var urlify = require('../../lib/urlify');
 //AWS INFO
-var AWS = require('aws-sdk');
-var accessKeyId = process.env.AWS_ACCESS_KEY;
-var secretAccessKey = process.env.AWS_SECRET_KEY;
-var S3_BUCKET = process.env.S3_BUCKET;
-var AWS_region = process.env.AWS_REGION;
 
-var AWS_config = {
-    accessKeyId: //NEED TO FIGURE OUT HOW TO DO THIS
-    secretAccessKey: //NEED TO FIGURE OUT HOW TO DO THIS
-};
-
-module.exports = function(router) {
+module.exports = function(router, key, secret) {
 
   router.use(bodyparser.json());
 
-  router.post('/patterns', eatAuth, function(req, res) {
+  router.post('/create-pattern', function(req, res) {
     var pattern = new Pattern();
     pattern.image = req.body.image;
     pattern.title = req.body.title;
     pattern.description = req.body.description;
+    pattern.category = req.body.category;
+    pattern.display = req.body.display;
     pattern.save(function(err, pattern) {
       if(err) {
         console.log(err);
@@ -40,17 +33,24 @@ module.exports = function(router) {
         console.log(err);
         return res.status(500).json({msg: 'Internal Server Error'});
       }
-      res.json({patterns: patterns});
+      var forReturn = {};
+      patterns.forEach(function (pattern) {
+        if(!forReturn[pattern.category]) {
+          forReturn[pattern.category] = [];
+        }
+        forReturn[pattern.category].push(pattern);
+      });
+      return res.json({patterns: forReturn});
     });
   });
 
   router.get('/pattern/:id', function(req, res) {
-    pattern.findOne({_id: req.params.id}, function(err, pattern) {
+    Pattern.findOne({_id: req.params.id}, function(err, pattern) {
       if(err){
         console.log(err);
         return res.status(500).json({msg: 'Internal Server Error'});
       }
-      res.status(200).json({pattern: pattern});
+      return res.status(200).json({pattern: pattern});
     });
   });
 
@@ -65,6 +65,12 @@ module.exports = function(router) {
   });
 
   router.get('/upload-config', eatAuth, function(req, res) {
+
+    var AWS_config = {
+      accessKeyId: key,
+      secretAccessKey: secret
+    };
+
     res.json(AWS_config);
   });
 
