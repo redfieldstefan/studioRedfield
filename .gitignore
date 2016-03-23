@@ -5,3 +5,4 @@ public/**/*
 data/**/*
 npm-debug.log
 .env
+config/**/*
