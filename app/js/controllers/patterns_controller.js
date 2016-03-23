@@ -46,7 +46,7 @@ module.exports = function(app) {
 
     $scope.createPattern = function (pattern) {
       $http.post('/api/create-pattern', pattern).then(function (res) {
-        $location.path('/catalogue/' + res.data.pattern.id);
+        $location.path('/catalogue/' + res.data.pattern._id);
       }),
       function (err) {
         console.log(err);

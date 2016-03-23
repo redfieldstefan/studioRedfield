@@ -5,6 +5,7 @@ var bodyparser = require('body-parser');
 var fs = require('fs');
 var eatAuth = require('../../lib/eat_auth')(process.env.APP_SECRET || 'catwalk');
 var urlify = require('../../lib/urlify');
+var config = require('../../config/aws.js');
 //AWS INFO
 
 module.exports = function(router, key, secret) {
@@ -67,8 +68,8 @@ module.exports = function(router, key, secret) {
   router.get('/upload-config', eatAuth, function(req, res) {
 
     var AWS_config = {
-      accessKeyId: key,
-      secretAccessKey: secret
+      accessKeyId: config.accessKeyId,
+      secretAccessKey: config.secretAccessKey
     };
 
     res.json(AWS_config);

@@ -2,14 +2,27 @@
   <section data-nav-head></section>
   <div class="container-catalogue">
 
-    <div class="images">
+    <div data-ng-if="pattern.display === 'standard'" class="images">
       <img src="{{pattern.image}}" alt="">
       <img src="{{pattern.image}}" alt="">
       <img src="{{pattern.image}}" alt="">
       <img src="{{pattern.image}}" alt="">
     </div>
 
-    <div class="text">
+    <div data-ng-if="pattern.display === 'hex'" class="images hex">
+      <img src="{{pattern.image}}" alt="">
+    </div>
+
+    <div data-ng-if="pattern.display === 'border'" class="images border">
+      <img src="{{pattern.image}}" alt="">
+      <img src="{{pattern.image}}" alt="">
+      <img src="{{pattern.image}}" alt="">
+      <img src="{{pattern.image}}" alt="">
+      <img src="{{pattern.image}}" alt="">
+      <img src="{{pattern.image}}" alt="">
+    </div>
+
+    <div data-ng-class="{'border': pattern.display === 'border'}" class="text">
       <h1>{{pattern.title}}</h1>
       <p>{{pattern.description}}</p>
     </div>

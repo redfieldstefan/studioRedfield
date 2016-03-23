@@ -10,7 +10,7 @@ module.exports = function(app) {
 
     $scope.redirect = function(destination) {
       $location.path('/' + destination);
-    }
+    };
 
     $scope.signIn = function(user) {
 
