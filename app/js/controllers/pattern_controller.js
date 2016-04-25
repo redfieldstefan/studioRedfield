@@ -13,6 +13,7 @@ module.exports = function(app) {
     $scope.getPattern = function () {
       $http.get('/api/pattern/' + patternId).then(function (res) {
         $scope.pattern = res.data.pattern;
+        $scope.pattern.description = $scope.pattern.description.split('\n');
       }),
       function (err) {
         console.log(err);
