@@ -5,6 +5,7 @@ module.exports = function(app) {
     return {
       restrict: 'EA',
       scope: {
+        inputId: '@',
         redirect: "&"
       },
       templateUrl: 'views/templates/nav_template.html'

@@ -30,19 +30,6 @@ nav ul {
   }
 
 nav ul li {
-  float: left;
-  padding-right: 15px;
-}
-
-  nav ul li:hover {
-    cursor: pointer;
-  }
-
-  nav ul li:hover > ul{
-    display: block;
-  }
-
-nav ul li {
   display: block;
   color: black;
   text-decoration: none;
@@ -50,6 +37,12 @@ nav ul li {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 7px;
+  float: left;
+  padding-right: 15px;
+}
+
+nav ul li.shop a {
+  color: #00796B;
 }
 
 .nav-white ul li {
@@ -59,6 +52,11 @@ nav ul li {
   nav ul li:hover{
     color: tomato;
     font-weight: bold;
+    cursor: pointer;
+  }
+
+  nav ul li:hover > ul{
+    display: block;
   }
 
 nav ul ul {
