@@ -39,7 +39,6 @@ module.exports = function(router, key, secret) {
         if(!forReturn[pattern.category]) {
           forReturn[pattern.category] = [];
         }
-        pattern.description = pattern.description.split('\n');
         forReturn[pattern.category].push(pattern);
       });
       return res.json({patterns: forReturn});
@@ -52,6 +51,7 @@ module.exports = function(router, key, secret) {
         console.log(err);
         return res.status(500).json({msg: 'Internal Server Error'});
       }
+      pattern.description = pattern.description.split('\n');
       return res.status(200).json({pattern: pattern});
     });
   });
