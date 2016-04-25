@@ -39,6 +39,7 @@ module.exports = function(router, key, secret) {
         if(!forReturn[pattern.category]) {
           forReturn[pattern.category] = [];
         }
+        pattern.description = pattern.description.split('\n');
         forReturn[pattern.category].push(pattern);
       });
       return res.json({patterns: forReturn});

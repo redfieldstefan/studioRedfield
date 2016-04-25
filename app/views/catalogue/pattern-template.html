@@ -24,7 +24,7 @@
 
     <div data-ng-class="{'border': pattern.display === 'border'}" class="text">
       <h1>{{pattern.title}}</h1>
-      <p>{{pattern.description}}</p>
+      <p data-ng-repeat="paragraph in pattern.description">{{paragraph}}</p>
     </div>
 
   </div>
