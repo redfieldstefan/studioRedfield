@@ -51,7 +51,7 @@ module.exports = function(router, key, secret) {
         console.log(err);
         return res.status(500).json({msg: 'Internal Server Error'});
       }
-      pattern.description = pattern.description.split('\n');
+      pattern.description = pattern.description.split('\n\n');
       return res.status(200).json({pattern: pattern});
     });
   });
