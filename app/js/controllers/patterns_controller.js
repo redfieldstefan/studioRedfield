@@ -22,7 +22,6 @@ module.exports = function(app) {
     };
 
     $scope.getPatterns = function () {
-
       $scope.loading = true;
 
       $http.get('/api/patterns').then(function (res) {
@@ -49,9 +48,14 @@ module.exports = function(app) {
       };
     };
 
-    $scope.setSection = function (category) {
+    $scope.setSection = function (category, delayMs) { //desired pattern category and delay time
+      $scope.loading = true;
       $scope.section = category;
+      if(!delayMs) { var delayMs = 0 }
       $scope.patterns = $scope.patternsMaster[category];
+      $timeout(function () {
+        $scope.loading = false;
+      }, delayMs);
     };
 
     $scope.createPattern = function (pattern) {
