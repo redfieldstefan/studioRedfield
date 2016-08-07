@@ -3,35 +3,42 @@
   <section class="container-catalogue">
     <h1 class="text-center">Our Patterns</h1>
 
-    <div class="bar">
-      <ul class="center">
-        <li class="text-center" data-ng-class="{'selected': section === 'modern'}" data-ng-click="setSection('modern')">Modern</li>
-        <li class="text-center" data-ng-class="{'selected': section === 'timeless'}" data-ng-click="setSection('timeless')">Timeless</li>
-        <li class="text-center" data-ng-class="{'selected': section === 'organic'}" data-ng-click="setSection('organic')">Organic</li>
-        <li class="text-center" data-ng-class="{'selected': section === 'hex-shapes'}" data-ng-click="setSection('hex-shapes')">Hex Shapes</li>
-        <li class="text-center" data-ng-class="{'selected': section === 'borders'}" data-ng-click="setSection('borders')">Borders</li>
-        <li class="text-center" data-ng-class="{'selected': section === 'pricing'}" data-ng-click="setSection('pricing')">Pricing</li>
-      </ul>
+    <div data-ng-if="loading" class="loading">
+      <div class="loader">Loading...</div>
     </div>
 
-    <div class="patterns center">
+    <div data-ng-if="!loading">
 
-      <div>
-        <ul>
-          <li class="pattern" data-ng-repeat="pattern in patterns">
-            <a data-ng-href="/#/catalogue/{{pattern._id}}">
-              <img class="pattern-image" src="{{pattern.image}}" alt="">
-              <p class="text-center">{{pattern.title}}</p>
-            </a>
-          </li>
+      <div class="bar">
+        <ul class="center">
+          <li class="text-center" data-ng-class="{'selected': section === 'modern'}" data-ng-click="setSection('modern')">Modern</li>
+          <li class="text-center" data-ng-class="{'selected': section === 'timeless'}" data-ng-click="setSection('timeless')">Timeless</li>
+          <li class="text-center" data-ng-class="{'selected': section === 'organic'}" data-ng-click="setSection('organic')">Organic</li>
+          <li class="text-center" data-ng-class="{'selected': section === 'hex-shapes'}" data-ng-click="setSection('hex-shapes')">Hex Shapes</li>
+          <li class="text-center" data-ng-class="{'selected': section === 'borders'}" data-ng-click="setSection('borders')">Borders</li>
+          <li class="text-center" data-ng-class="{'selected': section === 'pricing'}" data-ng-click="setSection('pricing')">Pricing</li>
         </ul>
       </div>
 
-      <div class="pricing" data-ng-if="section === 'pricing'">
-        <h2 class="text-center">Coming Soon</h2>
+      <div class="patterns center">
+        <div>
+          <ul>
+            <li class="pattern" data-ng-repeat="pattern in patterns">
+              <a data-ng-href="/#/catalogue/{{pattern._id}}">
+                <img class="pattern-image" src="{{pattern.image}}" alt="">
+                <p class="text-center">{{pattern.title}}</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pricing" data-ng-if="section === 'pricing' || section === 'organic'">
+          <h2 class="text-center">Coming Soon</h2>
+        </div>
       </div>
 
     </div>
+
 
 
   </section>

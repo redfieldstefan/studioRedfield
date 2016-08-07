@@ -25,6 +25,10 @@ require('./services/auth_service')(StudioRedfieldApp);
 StudioRedfieldApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/', {
+      templateUrl: 'views/catalogue/catalogue.html',
+      controller: 'MainController'
+    })
+    .when('/studioredfield', {
       templateUrl: 'views/home.html',
       controller: 'MainController'
     })
