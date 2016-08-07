@@ -3,6 +3,7 @@
 @import 'content.css';
 @import 'members.css';
 @import 'catalogue.css';
+@import 'loader.css';
 
 @-ms-viewport {
   width: device-width;

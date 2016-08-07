@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function(app) {
-  app.controller('PatternsController', ['$scope', '$location', '$cookies', 'auth', '$http', function($scope, $location, $cookies, auth, $http) {
+  app.controller('PatternsController', ['$scope', '$location', '$cookies', 'auth', '$http', '$timeout', function($scope, $location, $cookies, auth, $http, $timeout) {
 
     $scope.patternId = window.location.pathname.split('/').pop();
     $scope.section = 'modern';
@@ -9,6 +9,7 @@ module.exports = function(app) {
     var config = {
       headers: {'eat': eat}
     };
+    $scope.loading = true;
 
     $scope.isSignedIn = function () {
       if(!auth.isSignedIn) {
@@ -21,11 +22,20 @@ module.exports = function(app) {
     };
 
     $scope.getPatterns = function () {
+
+      $scope.loading = true;
+
       $http.get('/api/patterns').then(function (res) {
         $scope.patternsMaster = res.data.patterns;
         $scope.patterns = $scope.patternsMaster[$scope.section];
+        $timeout(function () {
+          $scope.loading = false;
+        }, 1500);
       }),
       function (err) {
+        $timeout(function () {
+          $scope.loading = false;
+        }, 1500);
         console.log(err);
       };
     };
