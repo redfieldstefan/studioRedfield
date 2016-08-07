@@ -1,10 +1,10 @@
 #catalogue .bar {
   width: 100%;
-  margin-top: 50px;
 }
 
 #catalogue .bar ul {
   width: 90%;
+  padding-bottom: 50px;
 }
 
 #catalogue .bar li {
@@ -33,7 +33,7 @@
 
 #catalogue .patterns {
   width: 90%;
-  margin-top: 100px;
+  /*margin-top: 100px;*/
 }
 
 #catalogue .pattern {
